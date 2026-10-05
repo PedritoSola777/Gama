@@ -4,100 +4,194 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Contacto | Gama Consultores</title>
+
 		<meta
 			name="description"
 			content="Solicita una revisión inicial de tu trámite de afore, pensión o Infonavit."
 		/>
+
 		<link
 			rel="icon"
 			type="image/svg+xml"
 			href="assets/imgs/logo/Horizonte-favicon.svg"
 		/>
+
 		<link rel="stylesheet" href="assets/css/agencia.css" />
+
+		<style>
+			.whatsapp-float {
+				position: fixed;
+				right: 24px;
+				bottom: 24px;
+				z-index: 999;
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				padding: 12px 18px;
+				border-radius: 999px;
+				background: #25d366;
+				color: #ffffff;
+				text-decoration: none;
+				font-weight: 700;
+				font-size: 15px;
+				line-height: 1;
+				box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+				transition:
+					transform 0.25s ease,
+					box-shadow 0.25s ease,
+					background 0.25s ease;
+			}
+
+			.whatsapp-float:hover {
+				background: #1ebe5d;
+				transform: translateY(-3px);
+				box-shadow: 0 12px 30px rgba(0, 0, 0, 0.24);
+			}
+
+			.whatsapp-float:focus-visible {
+				outline: 3px solid rgba(37, 211, 102, 0.35);
+				outline-offset: 4px;
+			}
+
+			.whatsapp-float svg {
+				width: 24px;
+				height: 24px;
+				flex-shrink: 0;
+				fill: currentColor;
+			}
+
+			@media (max-width: 600px) {
+				.whatsapp-float {
+					right: 16px;
+					bottom: 16px;
+					width: 56px;
+					height: 56px;
+					padding: 0;
+					justify-content: center;
+				}
+
+				.whatsapp-float span {
+					display: none;
+				}
+
+				.whatsapp-float svg {
+					width: 28px;
+					height: 28px;
+				}
+			}
+		</style>
 	</head>
+
 	<body>
 		<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
 		<header class="site-header">
 			<nav class="nav container" aria-label="Navegación principal">
-	<a class="brand" href="index.html">
-		<img class="brand-logo" src="assets/imgs/logo/GM1.png" alt="Gama Consultores">
-		<span class="brand-name">GAMA <small>CONSULTORES</small></span>
-	</a>
-	<button
-		class="menu-toggle"
-		type="button"
-		aria-label="Abrir menú"
-		aria-expanded="false"
-	>
-		<span></span>
-	</button>
-	<ul class="nav-links">
+				<a class="brand" href="index.html">
+					<img
+						class="brand-logo"
+						src="assets/imgs/logo/GM1.png"
+						alt="Gama Consultores"
+					/>
+					<span class="brand-name">
+						GAMA
+						<small>CONSULTORES</small>
+					</span>
+				</a>
+
+				<button
+					class="menu-toggle"
+					type="button"
+					aria-label="Abrir menú"
+					aria-expanded="false"
+				>
+					<span></span>
+				</button>
+
+				<ul class="nav-links">
 					<li><a href="index.html">Inicio</a></li>
 					<li><a href="tramites.html">Trámites</a></li>
 					<li><a href="privacy.html">Aviso de Privacidad</a></li>
 					<li><a href="faq.html">Preguntas</a></li>
-					<li><a class="btn" aria-current="page" href="contact.html">Contacto</a></li>
+					<li>
+						<a class="btn" aria-current="page" href="contact.html">
+							Contacto
+						</a>
+					</li>
 				</ul>
-</nav>
+			</nav>
 		</header>
+
 		<main id="contenido">
 			<section class="page-hero">
 				<div class="container" data-reveal>
 					<p class="eyebrow">Primera revisión</p>
+
 					<h1>Cuéntanos qué necesitas resolver.</h1>
+
 					<p>
-						No hace falta que conozcas el nombre exacto del trámite. Describe tu
-						situación y te ayudaremos a identificar el siguiente paso.
+						No hace falta que conozcas el nombre exacto del trámite.
+						Describe tu situación y te ayudaremos a identificar el siguiente paso.
 					</p>
 				</div>
 			</section>
+
 			<section class="section">
 				<div class="container contact-grid">
 					<aside class="contact-aside" data-reveal>
 						<p class="eyebrow">Contacto</p>
+
 						<h2>Empecemos con los datos esenciales.</h2>
+
 						<p>
-							La revisión inicial sirve para saber qué información falta, si
-							existe una ruta viable y qué alcance tendría el acompañamiento.
+							La revisión inicial sirve para saber qué información falta,
+							si existe una ruta viable y qué alcance tendría el acompañamiento.
 						</p>
+
 						<div class="contact-list">
 							<div class="contact-item">
-								<span>Correo</span
-								><strong
-									><a href="mailto:contacto@agenciahorizonte.mx"
-										>contacto@agenciahorizonte.mx</a
-									></strong
-								>
+								<span>Correo</span>
+								<strong>
+									<a href="mailto:clientes@agenciahorizonte.mx">
+										clientes@agenciahorizonte.mx
+									</a>
+								</strong>
 							</div>
+
 							<div class="contact-item">
-								<span>Ubicación</span
-								><strong>Puebla · Atención en todo México</strong>
+								<span>Ubicación</span>
+								<strong>Puebla · Atención en todo México</strong>
 							</div>
+
 							<div class="contact-item">
-								<span>Importante</span
-								><strong>No compartas contraseñas ni datos bancarios.</strong>
+								<span>Importante</span>
+								<strong>
+									No compartas contraseñas ni datos bancarios.
+								</strong>
 							</div>
 						</div>
 					</aside>
+
 					<form
 						class="form-card"
 						id="contacto-agencia"
-						data-email="contacto@agenciahorizonte.mx"
+						data-email="clientes@agenciahorizonte.mx"
 						data-reveal
 					>
 						<div class="form-grid">
 							<div class="field">
-								<label for="nombre">Nombre</label
-								><input
+								<label for="nombre">Nombre</label>
+								<input
 									id="nombre"
 									name="nombre"
 									autocomplete="name"
 									required
 								/>
 							</div>
+
 							<div class="field">
-								<label for="correo">Correo</label
-								><input
+								<label for="correo">Correo</label>
+								<input
 									id="correo"
 									name="correo"
 									type="email"
@@ -105,18 +199,21 @@
 									required
 								/>
 							</div>
+
 							<div class="field">
-								<label for="telefono">Teléfono</label
-								><input
+								<label for="telefono">Teléfono</label>
+								<input
 									id="telefono"
 									name="telefono"
 									type="tel"
 									autocomplete="tel"
 								/>
 							</div>
+
 							<div class="field">
-								<label for="interes">Tipo de trámite</label
-								><select id="interes" name="interes" required>
+								<label for="interes">Tipo de trámite</label>
+
+								<select id="interes" name="interes" required>
 									<option value="">Selecciona una opción</option>
 									<option>Retiro de afore</option>
 									<option>Pensión</option>
@@ -125,16 +222,30 @@
 									<option>No estoy seguro</option>
 								</select>
 							</div>
+
 							<div class="field full">
-								<label for="mensaje">Describe brevemente tu situación</label
-								><textarea id="mensaje" name="mensaje" required></textarea>
+								<label for="mensaje">
+									Describe brevemente tu situación
+								</label>
+
+								<textarea
+									id="mensaje"
+									name="mensaje"
+									required
+								></textarea>
 							</div>
+
 							<div class="field full">
-								<button class="btn" type="submit">Preparar correo</button>
+								<button class="btn" type="submit">
+									Preparar correo
+								</button>
+
 								<p class="form-note">
-									Se abrirá tu aplicación de correo. Al continuar aceptas el
-									<a href="privacy.html"><u>aviso de privacidad</u></a
-									>.
+									Se abrirá tu aplicación de correo.
+									Al continuar aceptas el
+									<a href="privacy.html">
+										<u>aviso de privacidad</u>
+									</a>.
 								</p>
 							</div>
 						</div>
@@ -142,44 +253,91 @@
 				</div>
 			</section>
 		</main>
+
 		<footer class="site-footer">
 			<div class="container footer-grid">
 				<div class="footer-brand">
 					<a class="brand" href="index.html">
-            <img src="assets/imgs/logo/GM2.png" alt="" style="width: 100px;">
-            <span class="brand-name">GAMA<small>CONSULTORES</small></span></a
-					>
+						<img
+							src="assets/imgs/logo/GM2.png"
+							alt=""
+							style="width: 100px"
+						/>
+
+						<span class="brand-name">
+							GAMA
+							<small>CONSULTORES</small>
+						</span>
+					</a>
+
 					<p>
-						Asesoría y acompañamiento en trámites de afore, pensiones, imss, issste, fovissste e Infonavit.
+						Asesoría y acompañamiento en trámites de afore,
+						pensiones, imss, issste, fovissste e Infonavit.
 					</p>
 				</div>
+
 				<div class="footer-col">
-					<!-- <h3>Servicios</h3>
+					<!--
+					<h3>Servicios</h3>
 					<ul>
 						<li><a href="tramites.html">Trámites afore</a></li>
 						<li><a href="tramites.html">Pensiones</a></li>
 						<li><a href="tramites.html">Infonavit</a></li>
 						<li><a href="faq.html">Preguntas frecuentes</a></li>
-					</ul> -->
+					</ul>
+					-->
 				</div>
+
 				<div class="footer-col">
 					<h3>Contacto</h3>
+
 					<ul>
 						<li>
-							<a href="mailto:contacto@agenciahorizonte.mx"
-								>contacto@agenciahorizonte.mx</a
-							>
+							<a href="mailto:clientes@agenciahorizonte.mx">
+								clientes@agenciahorizonte.mx
+							</a>
 						</li>
-						<li>Av. Constituyentes 1080, Lomas Altas, Miguel Hidalgo, 11950 Ciudad de México.</li>
-						<li><a>(55) 1922 9916</a></li>
+
+						<li>
+							Av. Constituyentes 1080, Lomas Altas,
+							Miguel Hidalgo, 11950 Ciudad de México.
+						</li>
+
+						<li>
+							<a href="tel:+525519229916">
+								(55) 1922 9916
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
+
 			<div class="container footer-bottom">
-				<span>© Gama Consultores.</span
-				><span>Tu trámite, con una ruta clara.</span>
+				<span>© Gama Consultores.</span>
+				<span>Tu trámite, con una ruta clara.</span>
 			</div>
 		</footer>
+
+		<!-- Botón flotante de WhatsApp -->
+		<a
+			class="whatsapp-float"
+			href="https://wa.me/5215519229916?text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20un%20tr%C3%A1mite."
+			target="_blank"
+			rel="noopener noreferrer"
+			aria-label="Enviar mensaje por WhatsApp"
+		>
+			<svg
+				viewBox="0 0 32 32"
+				aria-hidden="true"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path d="M19.11 17.2c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.13-.13.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29s.98 2.65 1.12 2.83c.14.18 1.93 2.95 4.68 4.14.65.28 1.16.45 1.56.58.65.21 1.25.18 1.72.11.52-.08 1.6-.65 1.83-1.29.23-.63.23-1.17.16-1.29-.07-.11-.25-.18-.52-.32z"/>
+				<path d="M16.03 3C8.85 3 3 8.85 3 16.03c0 2.3.6 4.55 1.74 6.53L3 29l6.61-1.73a13 13 0 0 0 6.42 1.64h.01C23.22 28.91 29 23.06 29 15.88 29 8.75 23.18 3 16.03 3zm0 23.7h-.01a10.78 10.78 0 0 1-5.5-1.51l-.39-.23-3.92 1.03 1.05-3.82-.25-.4a10.78 10.78 0 1 1 9.02 4.93z"/>
+			</svg>
+
+			<span>WhatsApp</span>
+		</a>
+
 		<script src="assets/js/agencia.js"></script>
 	</body>
 </html>
