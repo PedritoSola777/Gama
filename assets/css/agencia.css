@@ -317,7 +317,7 @@ p {
 			rgba(8, 31, 36, 0.75) 48%,
 			rgba(8, 31, 36, 0.2) 100%
 		),
-		url("../imgs/hero/bannerDesk.jpg") center/cover;
+		url("https://img.magnific.com/foto-gratis/concepto-hombres-negocios-apreton-manos_53876-31214.jpg") center/cover;
 }
 .hero::after {
 	content: "";
